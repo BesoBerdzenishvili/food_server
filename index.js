@@ -28,6 +28,10 @@ app.use(express.json());
 const foodRoutes = require("./routes/foodRoutes");
 const searchRoutes = require("./routes/searchRoutes");
 
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 app.use("/api/foods", foodRoutes);
 app.use("/api/search", searchRoutes);
 

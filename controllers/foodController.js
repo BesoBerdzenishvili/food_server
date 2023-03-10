@@ -1,4 +1,4 @@
-const Food = require("../../models/foodSchema");
+const Food = require("../models/foodSchema");
 
 // Create a new food item
 const createFoodItem = async (req, res) => {
